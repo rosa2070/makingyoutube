@@ -1,0 +1,10 @@
+
+
+{% for video in video_list %}
+    <a href="{% url 'catube:video_detail' video.pk %}">
+        {{ video.title }}
+    </a>
+{% endfor %}
+
+<hr/>
+<a href="{% url 'catube:video_new' %}">업로드</a>
